@@ -29,7 +29,7 @@ Route::get('/libros/{id}', [LibroController::class,'show'])
     ->name('libro.show')
     ->where('id', '[0-9]+');
 
-
+ 
 Route::get('/libros/crear', [LibroController::class,'create'])
     ->name('libro.create');
 

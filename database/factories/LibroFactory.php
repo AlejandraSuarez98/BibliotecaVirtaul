@@ -20,8 +20,11 @@ class LibroFactory extends Factory
             'titulo'=>$this->faker->sentence(),
             'autor'=>$this->faker->name(),
             'editorial'=>$this->faker->text($maxNbChars = 50),
-            'anio_publicacion'=>$this->faker->date(),
+            'anio_publicacion'=>$this->faker->numerify("####"),
             'cantidad_disponible'=>$this->faker->numberBetween(0,100)
         ];
     }
 }
+
+
+
